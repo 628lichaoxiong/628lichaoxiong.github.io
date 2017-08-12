@@ -17,7 +17,7 @@ public class BaseController {
 
 	public BaseController() {
 		// TODO Auto-generated constructor stub
-	}
+	}    
 
 	/**
 	 * 传入一个地址，Get 请求
