@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+        <title>分享有奖</title>
+        <style media="screen">
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                -webkit-box-sizing:border-box;
+            }
+            html {
+                display: block;
+                overflow-y: scroll;
+            }
+            body {
+                background: #fff;
+               -webkit-tap-highlight-color: transparent;
+                font-size: 14px;
+                color: #555;
+                font-family: "Microsoft YaHei","sans-serif";
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 100%;
+            }
+            a{
+                text-decoration: none; }
+
+            a, textarea, input {
+                  outline: none;
+            }
+            ul, li{
+                list-style: none;
+            }
+            html{
+                width: 100%;
+                height: 100%;
+            }
+            body{
+                width: 100%;
+            }
+            .back{
+                -webkit-overflow-scrolling : touch;
+                padding-bottom: .1rem;
+            }
+            .back .head img{
+                width: 100%;
+            }
+            .back .content{
+                width: 3.4rem;
+                height: 2rem;
+                background: url(../images/di@3x.png) no-repeat left center;
+                background-size: 100%;
+                margin: .27rem auto .54rem;
+                overflow: hidden;
+            }
+            .back .content .tips{
+                width: 2.02rem;
+                margin: .29rem auto 0;
+                font-size: .12rem;
+                text-align: center;
+            }
+            .back .content .tips li{
+                height: .12rem;
+                line-height: .12rem;
+                color: #333333;
+            }
+            .back .content .tips li:first-of-type{
+                margin-bottom: 0.05rem;
+            }
+            .back .content .tips span{
+                display: inline-block;
+                color: #F93334;
+            }
+            .back .content .invite{
+                width: 1.25rem;
+                margin: .53rem auto 0;
+                font-size: .12rem;
+                color: #333333;
+                text-align: center;
+            }
+            .back .content .invite li:first-of-type{
+                height: .28rem;
+                background: url(../images/anniu@3x.png) no-repeat left center;
+                background-size: 100%;
+                color: #fff;
+                margin-bottom: .13rem;
+            }
+            .back .content .invite li:first-of-type p{
+                color: #F4F4F4;
+                height: .28rem;
+			    line-height: .28rem;
+			    text-align: center;
+            }
+            .back .content .invite li:first-of-type span{
+                float: left;
+                margin-top: 0.06rem;
+            }
+            .back .content .invite li:nth-of-type(2){
+                height: .12rem;
+                color: #333333;
+                text-align: center;
+            }
+            .back .foot{
+                width: 3.4rem;
+                margin: 0 auto;
+            }
+            .back .foot .share_title{
+                width: 1.32rem;
+                height: .12rem;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+            }
+            .back .foot .share_title .line{
+                width: 100%;
+                height: 2px;
+                margin: 0.05rem auto 0;
+                background: #333333;
+            }
+            .back .foot .share_title .shareTo{
+                width: .72rem;
+                font-size: .12rem;
+                height: .12rem;
+                line-height: .12rem;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -0.36rem;
+                margin-top: -0.06rem;
+                text-align: center;
+                background: #fff;
+            }
+            .back .foot ul{
+                margin-top: .36rem;
+                display: flex;
+                justify-content: space-between;
+                height: .55rem;
+                align-items: center;
+            }
+            .back .foot ul li{
+                float: left;
+                text-align: center;
+            }
+            .back .foot ul li img{
+                width: .33rem;
+                display: block;
+                margin: 0 auto .1rem;
+            }
+            .back .foot ul li p{
+                font-size: .12rem;
+                color: #333333;
+                line-height: .12rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="back">
+            <div class="head">
+                <img src="../images/banners@3x.png" alt="">
+            </div>
+            <div class="content">
+                <ul class="tips">
+                    <li>好友使用您的邀请码注册成功后，</li>
+                    <li>您和好友都会立刻获得<span>299元红包</span>哦！</li>
+                </ul>
+                <ul class="invite">
+                    <li>
+                        <p id="inventID">XDHE1234</p>
+                    </li>
+                    <li>专属邀请码</li>
+                </ul>
+            </div>
+            <div class="foot">
+                <div class="share_title">
+                    <p class="line"></p>
+                    <p class="shareTo">分享到</p>
+                </div>
+                <ul>
+                    <li onclick="wechat()">
+                        <img src="../images/wechat.png" alt="" >
+                        <p>微信</p>
+                    </li>
+                    <li onclick="friends()">
+                        <img src="../images/friends.png" alt="">
+                        <p>朋友圈</p>
+                    </li>
+                    <li onclick="weibo()">
+                        <img src="../images/weibo@3x.png" alt="">
+                        <p>微博</p>
+                    </li>
+                    <li onclick="qq()">
+                        <img src="../images/qq@3x.png" alt="">
+                        <p>QQ</p>
+                    </li>
+                    <li onclick="erweima()">
+                        <img src="../images/erweima@3x.png" alt="">
+                        <p>面对面分享</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var body = document.getElementsByTagName('body')[0];
+        var html = document.getElementsByTagName('html')[0];
+        var width =body.offsetWidth;
+        html.style.fontSize = width/3.75+'px';
+        console.log(html.style.fontSize);
+
+        var searchURL = window.location.search;  
+        var searchURL = searchURL.substring(1, searchURL.length);  
+        var targetPageId = searchURL.split("invitationCode=")[1];
+        var code = targetPageId .split("&")[0];
+        var inventID  = document.getElementById('inventID');
+        inventID.innerHTML = code;
+
+        function wechat(){
+            window.location.href = "objc://local?wechat";
+        }
+        function friends(){
+            window.location.href = "objc://local?friends";
+        }
+        function weibo(){
+            window.location.href = "objc://local?weibo";
+        }
+        function qq(){
+            window.location.href = "objc://local?qq";
+        }
+        function erweima(){
+            window.location.href = "objc://local?erweima";
+        }
+    </script>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>日志管理</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="陪同版-1.2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="日志管理" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M6.656,2.703 L4.032,2.703 L4.032,4.047 L6.72,4.047 L6.72,2.703 L6.656,2.703 Z M14.656,10.703 L1.344,10.703 L0,14.735 L16,14.735 L14.656,10.703 Z M14.656,0.015 L1.344,0.015 L1.344,9.359 L14.656,9.359 L14.656,0.015 Z M13.312,8.015 L2.688,8.015 L2.688,1.359 L13.376,1.359 L13.376,8.015 L13.312,8.015 Z M9.344,5.391 L4.032,5.391 L4.032,6.735 L9.344,6.735 L9.344,5.391 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

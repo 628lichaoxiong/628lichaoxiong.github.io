@@ -1,0 +1,691 @@
+.card-detail{
+	background: #fff;
+}
+.card-detail .card-state{
+	width: 62.8px;
+	margin-left: 5px;
+    margin-top: -4px;
+}
+.card-detail  .edit-btn{
+	display:inline-block;
+	width:80px;height:36px;
+	margin-top:25px;margin-bottom:25px;
+	background:#1DA1F2;
+	color:#fff;border-radius:4px;line-height:36px;
+	text-align:center;
+	/*margin-left:12px;*/
+}
+/* .card-detail  .edit-btn:first-child{
+	background: #FF4949;
+} */
+.card-detail  .edit-btn:nth-child(2){
+	background: #20A0FF;
+}
+.card_gray{
+    background:#B3AFAF;
+}
+.card-detail .card-number{
+	    font-size: 18px;
+}
+.container{
+    width:430px;
+    height:337px;
+    position:fixed;
+    left:50%;
+    top:50%;
+	margin-top: -140px;
+    margin-left:-215px;
+    z-index:9999;
+    background: #FFFFFF;
+    /*box-shadow: 0px 2px 4px 0px rgba(70,82,96,0.30);*/
+    /*border-radius: 4px;*/
+	border: 1px solid #D3DCE6;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+	border-radius: 2px;
+	display: none;
+}
+.container .title, .card_pay .title{
+	margin: 20px 20px 26.9px 20px;
+	height: 16px;
+}
+.container .title h2, .card_pay .title h2{
+	font-size: 16px;
+	color: #1F2D3D;
+	letter-spacing: 0;
+	line-height: 16px;
+	float: left;
+}
+.container .title .close_container,.card_pay .title .close_container{
+	height: 14.7px;
+	line-height: 14.7px;
+	color: #C0CCDA;
+	text-align: center;
+	font-size:30px;
+	cursor:pointer;
+	z-index:100000;
+	float: right;
+	margin-top: -2px;
+}
+.container .card_message, .card_pay .card_message{
+	padding: 0 0 0 12px;
+	border-bottom: 1px solid #E0E6ED;
+}
+.card_pay .card_message{
+	padding: 0 20px;
+}
+.container .card-form, .card_pay .card-form{
+	height: 36px;
+	margin-bottom: 12px;
+}
+
+.container .last-form,{
+	margin-bottom: 26px;
+}
+.container .card-form p, .card_pay .card-form p{
+    width: 85px;
+	height: 36px;
+	line-height: 36px;
+	text-align: right;
+	float: left;
+	margin: 0 14px 0 0;
+	font-size: 14px;
+	color: #475669;
+}
+.container .card-form input, .card_pay .card-form input{
+	width: 306px;
+	height: 36px;
+	text-indent: 10px;
+	font-size: 14px;
+	border: 1px solid #C0CCDA;
+	border-radius: 4px;
+}
+.card-form:first-child input{
+	color: #999999;
+}
+/*.card-form{
+	padding: 10px;
+border-radius:4px;
+}*/
+.card-form-button{
+
+	    position: relative;
+    left: 18%;
+    top: 21px;
+    width: 51px;
+    height: 22px;
+
+}
+.card-form-button input{
+	 background: #1DA1F2;
+	 color:#fff;border-radius:4px;
+	}
+	.card-form-input{
+     position: relative;
+    left: 17%;
+    }
+
+	   .btn-group .save-btn{border:1px solid #1DA1F2;
+	   background: #1DA1F2;color:#fff;
+	   margin-left: 117px;
+	    margin-top: 20px;
+	    width: 101px;
+	    height: 33px;
+	   }
+.container .card-change, .card_pay .card-change{
+	height: 36px;
+	width: 187px;
+	float: right;
+	margin-top: 16px;
+}
+.container .card-change input, .card_pay .card-change input{
+	height: 36px;
+	float: left;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.cancel{
+	width: 64px;
+	height: 36px;
+	border: 1px solid #C0CCDA;
+	color: #475669;
+	margin-right: 10px;
+	background: #fff;
+	border-radius: 4px;
+}
+.confirm{
+	height: 36px;
+	width: 87px;
+	background: #20A0FF;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 4px;
+}
+/*绂佺敤寮规*/
+.disable_card{
+	width: 390px;
+	height: 202px;
+	box-sizing: border-box;
+	background: #FFFFFF;
+	border: 1px solid #D3DCE6;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+	border-radius: 2px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -75px;
+	margin-left: -205px;
+	display: none;
+	z-index: 999;
+}
+.disable_card .disable_content{
+	margin: 20px 20px 15px;
+}
+.disable_card .disable_content h2{
+	font-size: 16px;
+	color: #1F2D3D;
+	line-height: 16px;
+}
+.disable_card .disable_content>p{
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+}
+.disable_card .disable_content>p img{
+	width: 40px;
+	height: 40px;
+	margin-right: 14px;
+}
+.disable_card .disable_content>p span{
+	font-size: 14px;
+	color: #475669;
+}
+.disable_card .disable_content .operation{
+	height: 36px;
+	line-height: 36px;
+	margin-top: 45px;
+	float: right;
+}
+.disable_card .disable_content .operation input{
+	font-size: 14px;
+	line-height: 14px;
+	float: left;
+	cursor: pointer;
+}
+.confirm2{
+	width: 64px;
+}
+/********鍗＄墖鍏呭��/杩樻*********/
+.card_pay{
+	width: 430px;
+	height: 362px;
+	background: #FFFFFF;
+	border: 1px solid #D3DCE6;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.12), 0 0 6px 0 rgba(0,0,0,0.04);
+	border-radius: 2px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -181px;
+	z-index: 999;
+	display: none;
+	margin-left: -215px;
+}
+.card_pay .card-form p{
+	width: 56px;
+	margin-right: 18px;
+}
+.card_pay .card-form input{
+	width: 316px;
+}
+.card_pay .last-form{
+	margin-bottom: 16px;
+}
+.card_pay .card_message>p{
+	font-size: 14px;
+	color: #475669;
+	height: 19px;
+	line-height: 19px;
+	text-align: right;
+	margin-bottom: 16px;
+}
+.card_pay .card_message>p span{
+	color: red;
+}
+/*琛ㄦ牸*/
+.table_card{
+	border: 1px solid #D2D4D7;
+	margin-bottom: 30px;
+}
+/*N鍗＄鐞�*/
+.card-detail{
+	height: 80px;
+	line-height: 80px;
+	border: 1px solid #D2D4D7;
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+.card-detail>em{
+	margin-left: 30px;
+}
+.card_state{
+	height: 80px;
+	float: right;
+	margin-right: 25px;
+}
+.card_state>a,.card_state>em{
+	float: left;
+}
+.card_state>a{
+	margin-right: 12px;
+	background: #FF4949;
+}
+.card_state>a+a{
+	background: #20A0FF;
+}
+.card_state em{
+	background: #13CE66;
+}
+.table-user .N_detail td span{
+	font-family: MicrosoftYaHei;
+	font-size: 14px;
+	color: #5B6F81;
+	letter-spacing: 0;
+	line-height: 14px;
+}
+a:hover{
+	text-decoration: none;
+}
+/*琛ㄦ牸*/
+.N_detail tr td{
+	padding: 6px 0;
+}
+.N_detail tr td:first-child>span{
+	width: 84px;
+	text-align: right;
+}
+.N_detail tr td+td span:first-child{
+	width: 98px;
+	text-align: right;
+}
+/*鍗＄墖鏁版嵁*/
+.card_date, .card_date>ul{
+	height: 455px;
+}
+.card_date>ul>li{
+	width: 49.5%;
+	height: 454px;
+	background: #FFFFFF;
+	border: 1px solid #D2D4D7;
+	border-radius: 2px;
+	float: left;
+	position: relative;
+}
+.card_date>ul>li .tips{
+	width: 440px;
+	height: 135px;
+	background: rgba(77,99,123,0.95);
+	border-radius: 4px;
+	position: absolute;
+	left: 87px;
+	top: 42px;
+	display: none;
+}
+.card_date>ul>li .tips ul{
+	margin: 13px 0 0 14px;
+}
+.card_date .tips li{
+	color: #FFFFFF;
+	line-height: 16px;
+}
+.card_date .tips li:first-child{
+	font-size: 13px;
+	font-size: 13px;
+	line-height: 13px;
+	margin-bottom: 3px;
+}
+.card_date>ul>li+li{
+	float: right;
+}
+.card_date>ul>li h2{
+	height: 45.5px;
+	line-height: 45.5px;
+	border-bottom: 1px solid #D2D4D7;
+	font-size: 16px;
+	color: #333333;
+	text-indent: 20.7px;
+	/*position: relative;*/
+}
+.card_date>ul>li>img{
+	width: 14.5px;
+	position: absolute;
+	left: 89.9px;
+	top: 17px;
+}
+.card_date>ul>li .table_date{
+	width: 310px;
+	margin-left: 20.7px;
+}
+.card_date>ul>li .table_date .first{
+	width: 310px;
+	height: 62px;
+	line-height: 62px;
+	border-bottom: 1px solid #D2D4D7;
+}
+.card_date>ul>li .table_date .first span{
+	color: #333333;
+	float: left;
+	font-weight: 600;
+}
+.card_date>ul>li .table_date .first span:first-child{
+	width: 95px;
+	display: inline-block;
+	font-size: 14px;
+	margin-right: 20px;
+}
+.card_date>ul>li .table_date .first span+span{
+	width: 52px;
+	font-size: 20px;
+}
+.card_date>ul>li .table_date .second{
+	width: 310px;
+	height: 124px;
+	margin-top: 13px;
+	border-bottom: 1px solid #D2D4D7;
+}
+.card_date>ul>li .table_date .second p{
+	margin-left: 33px;
+	height: 38px;
+}
+.card_date>ul>li .table_date .second p span{
+	height: 38px;
+	line-height: 38px;
+	display: inline-block;
+	float: left;
+}
+.card_date>ul>li .table_date .second p span:first-child{
+	width: 60px;
+	font-size: 14px;
+	color: #333333;
+	margin-right: 20px;
+	font-weight: 600;
+}
+.card_date>ul>li .table_date .second p span+span{
+	font-size: 20px;
+	color: #FC9803;
+	margin-top: -3px;
+}
+.card_date>ul>li .table_date .third{
+	height: 191px;
+	margin-top: 13px;
+}
+.card_date>ul>li .table_date .third p{
+	height: 28px;
+	margin-left: 33px;
+}
+.card_date>ul>li .table_date .third p span{
+	height: 28px;
+	line-height: 28px;
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.card_date>ul>li .table_date .third p span:first-child{
+	width: 60px;
+	margin-right: 20px;
+}
+.card_date>ul>li .table_date .third p span+span{
+	font-weight: 600;
+}
+/*N鍗℃棩蹇�*/
+.card_log{
+	background: #FFF;
+	margin-bottom: 9px;
+}
+.card_log td{
+	border: 1px solid #D2D4D7;
+	height: 38px;
+}
+.card_log thead td{
+	text-align: center;
+}
+.card_log thead tr+tr{
+	background:  #E3EAF4;
+}
+.card_log tbody td{
+	text-align: center;
+	font-weight: normal;
+}
+.card_log tbody td+td+td{
+	text-align: left;
+	text-indent: 20px;
+}
+.card_log td:first-child{
+	width: 15.9%;
+}
+.card_log td+td{
+	width: 12.3%;
+}
+.card_log td+td+td{
+	width: 51.5%;
+}
+.remark{
+	width: 100%;
+	height: 88px;
+	position: relative;
+}
+.remark textarea{
+	width: 91%;
+	height: 88px;
+	border: 1px solid #D2D4D7;
+	border-radius: 4px;
+	text-indent: 20px;
+	padding-top: 14px;
+	color: #999999;
+}
+.remark [type="submit"]{
+	width: 88px;
+	height: 36px;
+	background: #20A0FF;
+	border-radius: 4px;
+	color: #fff;
+	border: none;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	cursor: pointer;
+}
+/*主打*/
+.new_count{
+	height: 14px;
+	line-height: 14px;
+	margin-bottom: 10px;
+}
+.new_count p{
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.new_count p:first-child{
+	margin-right: 62px;
+}
+.new_state{
+	width: 67%;
+	height: 40px;
+	border: 1px solid #D2D4D7;
+	background: #FFFFFF;
+	margin-bottom: 10px;
+}
+.new_state li{
+	float: left;
+	width: 19.9%;
+	height: 40px;
+	line-height: 40px;
+	border-right: 1px solid #D2D4D7;
+	text-align: center;
+	font-size: 14px;
+	color: #475669;
+}
+.new_state li:last-child{
+	border-right: none;
+	position: relative;
+}
+.new_state li input[type="checkbox"]{
+	width: 16px;
+	height: 16px;
+}
+.new_state li input[type="button"]{
+	width: 60px;
+	height: 30px;
+	border: none;
+	background: #E3EAF4;
+	border-radius: 4px;
+	color: #999;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -15px;
+	margin-left: -30px;
+}
+.new-table{
+	width: 67%;
+}
+.new-table th, .new-table td{
+	height: 40px;
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	line-height: 14px;
+}
+.new-table th{
+	background: #E3EAF4;
+}
+.new-table td{
+	background: #fff;
+}
+.new-table nav{
+	width: 99.8%;
+	background: #fff;
+	border: 1px solid #D2D4D7;
+	border-top: none;
+}
+.new-table nav ul{
+	width: 100%;
+}
+/******鐢熸垚鏂板崱鐣岄潰*******/
+.new_back{
+	width: 100%;
+	height: auto;
+	background: #FFFFFF;
+	border: 1px solid #D2D4D7;
+	border-radius: 2px;
+}
+.new_back>h4{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid #D2D4D7;
+	text-indent: 20px;
+	color: #333333;
+	margin-bottom: 40px;
+}
+.new_back .new_card{
+	width: 430px;
+	margin: 0 auto;
+}
+.new_back .add_card{
+	width: 100%;
+}
+.new_back .add_card .card_form{
+	padding: 0;
+	border-bottom: 1px solid #E0E6ED;
+}
+.new_back .add_card .card_form .list_div{
+	margin: 0 0 20px 0;
+}
+.new_back .add_card .card_form .list_div p{
+	width: 56px;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 12px 0 0;
+	font-size: 14px;
+	color: #5B6F81;
+}
+.new_back .add_card .card_form .list_div input{
+	width: 360px;
+	color: #999999;
+}
+.new_back .card_form .order_information_left_list{
+	width: 100%;
+}
+.new_back .card_form .order_information_left_list p{
+	width: 56px;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 12px 0 0;
+	font-size: 14px;
+	color: #5B6F81;
+}
+.new_back .card_form .styled-select-1 select{
+	width: 100%;
+}
+.new_back .card_form .styled-select-1{
+	width: 360px;
+	float: left;
+}
+.new_back .card_form .styled-select-1 ul{
+	width: 358px;
+}
+.new_back .btn-group{
+	height: 36px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	font-size: 14px;
+	padding-left: 30%;
+}
+.new_back .btn-group .cancel{
+	margin-right: 20px;
+	float: left;
+	color: #1F2D3D;
+}
+.new_back .btn-group .save-btn{
+	width: 88px;
+	margin: 0;
+	border-radius: 4px;
+	height: 36px;
+}
+.card-detail .able{
+   background: #13CE66;
+}
+.card-detail .rble{
+   background: #FF4949;
+}
+.card-detail .disable{
+   background: #FF4949;
+}
+.card-detail .card_state .disable_update{
+    background: #C2C2C2;
+}
+/*卡片详情表格切换*/
+.selectUL{
+	height: 40px;
+	margin-bottom: 20px;
+}
+.selectUL li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	background: #E3EAF4;
+	color: #5B6F81;
+	border: 1px solid #D2D4D7;
+	/*margin-right: 20px;*/
+	border-radius: 4px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+.cur{
+	background: #f0f0f0!important;
+	color: #000!important;
+}

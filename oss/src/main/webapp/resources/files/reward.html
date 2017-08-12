@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<title>邀请有奖</title>
+<style media="screen">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+html {
+	display: block;
+	overflow-y: scroll;
+}
+
+body {
+	background: #fff;
+	-webkit-tap-highlight-color: transparent;
+	font-size: 14px;
+	color: #555;
+	font-family: "Microsoft YaHei", "sans-serif";
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a, textarea, input {
+	outline: none;
+}
+
+ul, li {
+	list-style: none;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+}
+
+.back {
+	-webkit-overflow-scrolling :  touch;
+	padding-bottom: .1rem;
+}
+
+.back .head img {
+	width: 100%;
+}
+
+.back .content {
+	width: 3.4rem;
+	height: 2rem;
+	background: url(../images/di@3x.png) no-repeat left center;
+	background-size: 100%;
+	margin: .27rem auto .31rem;
+	overflow: hidden;
+}
+
+.back .content .tips {
+	width: 1.78rem;
+	margin: .29rem auto 0;
+	font-size: .12rem;
+	text-align: center;
+}
+
+.back .content .tips li {
+	height: .12rem;
+	line-height: .12rem;
+	color: #333333;
+}
+
+.back .content .tips li:first-of-type {
+	margin-bottom: 0.05rem;
+}
+
+.back .content .tips span {
+	display: inline-block;
+	color: #F93334;
+}
+
+.back .content .invite {
+	width: 1.25rem;
+	margin: .4rem auto 0;
+	font-size: .12rem;
+	color: #333333;
+	text-align: center;
+}
+
+.back .content .invites {
+	font-size: .12rem;
+	margin: 0 auto;
+	width: 1.6rem;
+	margin-top: .7rem;
+}
+
+.back .content .invite li:first-of-type {
+	height: .12rem;
+	line-height: .12rem;
+	margin-bottom: .11rem;
+}
+
+.back .content .invite li:nth-of-type(2) {
+	height: .28rem;
+	background: url(../images/anniu@3x.png) no-repeat left center;
+	background-size: 100%;
+	color: #fff;
+	margin-bottom: .15rem;
+}
+
+.back .content .invite li:nth-of-type(2) p {
+	margin: 0.06rem 0.08rem 0 .16rem;
+	color: #F4F4F4;
+	height: .28rem;
+    line-height: .28rem;
+}
+
+.back .content .invite li:nth-of-type(2) span {
+	float: left;
+	margin-top: 0.06rem;
+}
+
+.back .content .invite li:nth-of-type(3) p {
+	width: .5rem;
+	color: #F43334;
+	border-bottom: 1px solid #F43334;
+	margin: 0 auto;
+	padding-bottom: 0.03rem;
+}
+
+.back .foot {
+	width: 3.4rem;
+	margin: 0 auto;
+}
+
+.back .foot img {
+	width: 100%;
+}
+</style>
+</head>
+<body>
+	<div class="back">
+		<div class="head">
+			<img src="../images/banner@3x.png" alt="">
+		</div>
+		<div class="content">
+			<ul class="tips">
+				<li>注册时输入邀请码</li>
+				<li>双方都可以马上获得<span>299元红包</span>！
+				</li>
+			</ul>
+			<ul class="invite">
+				<li>您所获得的邀请码为：</li>
+				<li>
+					<p id="inventID"></p>
+				</li>
+				<li><p class="downloads">立即下载</p></li>
+			</ul>
+			<p class="invites">快去“我的”里邀请好友吧！</p>
+		</div>
+		<div class="foot">
+			<img src="../images/ditu@3x.png" alt="">
+		</div>
+	</div>
+</body>
+<script src="../js/jquery.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+        var body = document.getElementsByTagName('body')[0];
+        var html = document.getElementsByTagName('html')[0];
+        var width =body.offsetWidth;
+        html.style.fontSize = width/3.75+'px';
+        console.log(html.style.fontSize);
+
+        window.onload = function(){
+        	var searchURL = window.location.search;  
+            var searchURL = searchURL.substring(1, searchURL.length);
+            var targetPageId = searchURL.split("invitationCode=")[1];
+            if(targetPageId == undefined){
+                $('.invite').hide();
+                $('.invites').show();
+            }else{
+                $('.invites').hide();
+                $('.invite').show();
+            }
+            var code = targetPageId .split("&")[0];
+            var inventID  = document.getElementById('inventID');
+            
+            $('#inventID').html(code);
+
+            var downloads = document.getElementsByClassName('downloads')[0];
+            downloads.onclick = function(){
+                window.location.href="http://a.app.qq.com/o/simple.jsp?pkgname=com.transn.r2customer_escort";
+            }
+        }
+    </script>
+</html>

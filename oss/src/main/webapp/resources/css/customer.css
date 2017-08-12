@@ -1,0 +1,14 @@
+.card-detail{
+	margin-bottom: 30px;
+}
+.basic h3{
+	height: 40px;
+	line-height: 40px;
+	background: #E3EAF4;
+	color: #5B6F81;
+	font-size: 15px;
+    text-indent: 25px;
+}
+.mainBody .basic table tr td span{
+	width: 112px;
+}

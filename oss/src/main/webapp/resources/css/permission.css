@@ -1,0 +1,61 @@
+.new_back>h4{
+	margin-bottom: 0;
+}
+.panel_search{
+	margin: 0 20px;
+	overflow: hidden;
+}
+.fl{
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid #D2D4D7;
+}
+.fl .role td{
+	height: 36px;
+	line-height: 36px;
+	display: inline-block;
+}
+.fl .role td:first-child{
+	font-size: 14px;
+	color: #333333;
+	margin-right: 9px;
+}
+.fl .role td:last-child{
+	width: 180px;
+}
+.fl .fl_head{
+	height: 16px;
+    line-height: 16px;
+    margin-bottom: 12px;
+}
+.fl .fl_head input,.fl .fl_content input{
+	float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+.fl .fl_head p,.fl .fl_content p{
+	font-size: 14px;
+	color: #1F2D3D;
+	float: left;
+}
+.fl .fl_content{
+	height: 16px;
+    line-height: 16px;
+	padding-left: 24px;
+}
+.fl .fl_content li{
+	float: left;
+	margin-right: 20px;
+}
+#submit{
+	width: 150px;
+	height: 40px;
+	background: #1DA1F2;
+	border-radius: 4px;
+	border: none;
+	font-size: 17px;
+	color: #FFFFFF;
+    margin-top: 12px;
+    cursor: pointer;
+}

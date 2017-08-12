@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title>完善资料领红包</title>
+        <style media="screen">
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                -webkit-box-sizing:border-box;
+            }
+            html {
+                display: block;
+                overflow-y: scroll;
+                -webkit-overflow-scrolling: touch;
+            }
+            body {
+                background: #fff;
+               -webkit-tap-highlight-color: transparent;
+                font-size: .14rem;
+                color: #555;
+                font-family: "Microsoft YaHei","sans-serif";
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 100%;
+            }
+            a{
+                text-decoration: none; }
+
+            a, textarea, input {
+                  outline: none;
+            }
+            ul,li{
+                list-style: none;
+            }
+            .back img{
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="back">
+            <img src="../images/translator.png" alt="">
+        </div>
+    </body>
+    <script type="text/javascript">
+        var body = document.getElementsByTagName('body')[0];
+        var html = document.getElementsByTagName('html')[0];
+        var width =body.offsetWidth;
+        html.style.fontSize = width/3.75+'px';
+        console.log(html.style.fontSize);
+    </script>
+</html>

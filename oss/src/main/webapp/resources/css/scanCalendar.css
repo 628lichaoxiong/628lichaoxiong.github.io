@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin:0; padding:0; list-style:none;box-sizing: border-box;}
+/*清除浮动*/
+.clearfix:before, .clearfix:after { content:"";display: table;}
+.clearfix:after{clear:both;	overflow: hidden;}
+.clearfix{zoom:1;clear:both;}
+.myCalendar{width:314px; height:auto; padding-bottom:20px; overflow:hidden; position:absolute; left:-180px; top:44px; display:none; background:#fff; border: 1px solid #E3E3E3; box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15); border-radius: 4px;z-index:99999; font-family:"Microsoft YaHei UI";}
+.myCalendar a{position:absolute;  top:5px; text-align:center; width:40px; height:30px; text-decoration:none; font-size:15px;}
+.cancle{ left:15px;color:#999999;font-size:14px;}
+.finish{ position:absolute; right:15px; top:0px; color:#7ecef4;font-size:14px; cursor:pointer;}
+.myCalendar .prev{ width:30px; height:30px; left:80px ;top:22px; background:url(../images/small_prev_date.png) no-repeat; background-size:30px;}
+.myCalendar .next{ width:30px; height:30px; right:80px;top:22px; background:url(../images/small_next_date.png) no-repeat; background-size:30px;}
+.myCalendar .prev img{width:10px;height:18px;vertical-align:middle;margin-right:3px;margin-bottom:4px;}
+.myCalendar .next img{width:10px;height:18px;vertical-align:middle;margin-left:3px;margin-bottom:4px;}
+.myCalendar h2{width:100%; height:20px; text-align:center;font-size:14px;color:#333; margin:30px auto 20px auto; font-weight:normal;padding:0 5%;}
+.myCalendar ol{overflow:hidden;padding:0 14px;}
+.myCalendar ol li{float:left; width:40px; height:40px; text-align:center; line-height:40px;font-size:12px;color:#999;}
+.myCalendar ul{overflow:hidden;background:#ffffff;padding:0 14px;}
+.myCalendar ul li{float:left; width:40px; height:40px; text-align:center; line-height:20px;color:#333; border: 1px solid #D2D4D7;}
+.myCalendar ol li.week_end{color:red;}
+.myCalendar ul li.today{ color:#ffffff; background:#B3B3B3;}*/
+.today{ color:#fff; background:#B3B3B3;}
+.myCalendar ul li.xianxia{ color:#ffffff; background:#FF8E8E;}*/
+.xianxia{ color:#fff; background: #FF8E8E;}
+.myCalendar ul li.past{color:#D2D4D7;}
+.past{color:#999; background:#fff;}
+
+.canUse{ color:#333; cursor:pointer;background-color:#ffffff;}
+.notUse{color:#999999;background:#f3f5f7;}
+/*.current{color:#ffffff;cursor:pointer; background:#7ecef4;}*/
+.current{color:#333;cursor:pointer; background:#FFF;}
+.currentclick{color:#ffffff;cursor:pointer; background:#7ecef4;}
+.p1{background:#f3f5f7;padding:10px 5%;}
+.p1 span{ width:32%; height:40px; line-height:40px; margin-top:10px; margin-left:1%; margin-bottom:5px; border-radius:4px; font-size:13px;text-align:center;display:inline-block;border:1px solid #d7d7d7;}
+.date_h4{ text-align:center; height:40px; line-height:40px;margin-top:20px;font-size:17px;color:#333333;font-weight:normal;}
+.date_h4.time{background:#f3f5f7; margin-top:4px; padding-top:8px;}
+.chose_time_listener{
+	display:none;
+	position:fixed;top:0;width:100%;height:100%;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	background-color: #000000;
+	z-index:1000;
+  }
+.cur{ cursor:pointer;}
+
+.close_gb{ width:28px; height:28px; text-align:center; line-height:28px; color: #999999; position:absolute; right:8px; top:8px; font-size:28px; font-weight:bold; cursor:pointer;}
+
+.myCalendar_fenlei{ width:100%; padding:0 40px; margin:5px auto;}
+.myCalendar_fenlei span{ font-size:12px; color:#333;}
+.myCalendar_fenlei_1{ display:block; float:left; margin-right:30px; }
+.myCalendar_fenlei_1 span:first-child{ display:block; float:left; margin-top:5px; width:12px; height:12px; background: #FF8E8E; border: 1px solid #D2D4D7; margin-right:4px;}
+.myCalendar_fenlei_1 span:last-child{}
+.myCalendar_fenlei_2{ display:block; float:left; margin-right:30px;}
+.myCalendar_fenlei_2 span:first-child{ display:block; float:left; margin-top:5px; width:12px; height:12px;background: #FFFFFF; border: 1px solid #D2D4D7; margin-right:4px;}
+.myCalendar_fenlei_2 span:last-child{}
+.myCalendar_fenlei_3{ display:block; float:left;}
+.myCalendar_fenlei_3 span:first-child{ display:block; float:left; margin-top:5px; width:12px; height:12px;background: #B3B3B3; border: 1px solid #D2D4D7; margin-right:4px;}
+.myCalendar_fenlei_3 span:last-child{}
+

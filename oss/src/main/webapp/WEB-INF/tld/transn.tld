@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>    
+<taglib>    
+    <tlib-version>1.0</tlib-version>    
+    <jsp-version>1.2</jsp-version>    
+    
+    <tag>    
+        <name>StatusName</name>    
+        <tag-class>com.transn.houtai.util.StatusNameTag</tag-class>
+        <body-content>JSP</body-content>    
+        <attribute>    
+            <name>value</name>    
+            <required>true</required>    
+            <rtexprvalue>true</rtexprvalue>    
+        </attribute>    
+    </tag>
+    <tag>    
+        <name>cardStatus</name>    
+        <tag-class>com.transn.houtai.util.CardStatusTag</tag-class>
+        <body-content>JSP</body-content>    
+        <attribute>    
+            <name>value</name>    
+            <required>true</required>    
+            <rtexprvalue>true</rtexprvalue>    
+        </attribute>    
+    </tag>
+    <tag>    
+        <name>menuName</name>    
+        <tag-class>com.transn.houtai.util.MenuNameTag</tag-class>
+        <body-content>JSP</body-content>     
+        <attribute>    
+            <name>value</name>    
+            <required>true</required>    
+            <rtexprvalue>true</rtexprvalue>    
+        </attribute>    
+    </tag>
+</taglib>

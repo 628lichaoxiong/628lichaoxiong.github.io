@@ -1,0 +1,77 @@
+
+.uboxstyle{margin-top:4px; height:30px; line-height: 30px;}
+.uboxstyle .select_box{width: 250px; height: 100%;}
+.uboxstyle div.tag_select, .uboxstyle div.tag_select_hover, .uboxstyle div.tag_select_open {
+	display: block;
+	text-indent: 10px;
+	height: 100%;
+	color: #666666;
+	text-align:left;
+}
+.uboxstyle div.tag_select {/* (“请选择”) */
+	background: #F8FAFD; border-radius:5px;
+}
+.uboxstyle div.tag_select_hover {/* 滑过时(“请选择”) */
+	background: #F8FAFD; border-radius:5px;
+}
+.uboxstyle div.tag_select_open {/* 点击时(“请选择”) */
+	background: #F8FAFD; border-radius:5px 5px 0px 0px;
+}
+.uboxstyle ul.tag_options {
+	padding: 0px;
+	margin: 0px;
+	background: #F8FAFD;
+	width: 250px;
+	list-style-type: none;
+	position: absolute;
+	padding-bottom:5px;
+	border-radius:0px 0px 5px 5px;
+	text-align:left;
+}
+.uboxstyle ul.tag_options li {/* 下拉框单行选项 */
+	display: block;
+	text-indent: 10px;
+	width: 100%;
+	line-height: 24px;
+	padding-top: 0px;
+	height: 24px;
+	text-decoration: none
+}
+.uboxstyle ul.tag_options li.open_hover {/* 滑过下拉框选项 */
+	background: #e3eaf4;
+}
+.uboxstyle ul.tag_options li.open_selected {/* 下拉框中被选中的内容 */
+	background: #e3eaf4;
+}
+
+.ubox_sele{display:inline-block; *zoom:1; *display:inline; width: 80px; margin-top:0; margin-right:10px; vertical-align:middle;}
+.ubox_sele .select_box{width: 100%; position:relative;}
+.ubox_sele div.tag_select, .ubox_sele div.tag_select_hover{/* (“请选择”) 滑过时(“请选择”)  */
+	border:1px solid #ccc; border-radius:4px; overflow:hidden; background:none;
+}
+.ubox_sele div.tag_select_open{/* 点击时(“请选择”)  */
+	border:1px solid #ccc; border-radius:4px 4px 0 0; overflow:hidden; background:none;
+}
+.ubox_sele div.tag_select:before, .ubox_sele div.tag_select_hover:before, .ubox_sele div.tag_select_open:before {/* (“请选择”) 滑过时(“请选择”)  点击时(“请选择”) */
+	border-radius:0 4px 4px 0; width:10px; position:absolute; right:7px; top:0px; bottom:-1px; content: ' '; background:url('../images/sele.png') no-repeat center;
+}
+.ubox_sele div.tag_select_open:after {border-color: transparent transparent #fff transparent; margin-top:-8px;}
+.ubox_sele ul.tag_options {
+	background: #F8FAFD;
+	border-radius:0px 0px 4px 4px; border:1px solid #E4E8EE; border-top:0; box-sizing:border-box; width:100%;
+}
+.uboxstyle ul.tag_options li {/* 下拉框单行选项 */
+	display: block;
+	text-indent: 10px;
+	width: 100%;
+	line-height: 26px;
+	padding-top: 0px;
+	height: 26px;
+	text-decoration: none
+}
+.uboxstyle ul.tag_options li.open_hover {/* 滑过下拉框选项 */
+	background: #e3eaf4;
+}
+.uboxstyle ul.tag_options li.open_selected {/* 下拉框中被选中的内容 */
+	background: #e3eaf4;
+}

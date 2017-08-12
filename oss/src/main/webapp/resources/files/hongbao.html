@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title>红包使用规则</title>
+        <style media="screen">
+            *{
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                -webkit-box-sizing:border-box;
+            }
+            html {
+                display: block;
+                overflow-y: scroll;
+            }
+            body {
+                background: #fff;
+               -webkit-tap-highlight-color: transparent;
+                font-size: .14rem;
+                color: #555;
+                font-family: "Microsoft YaHei","sans-serif";
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-size: 100%;
+            }
+            a{
+                text-decoration: none; }
+
+            a, textarea, input {
+                  outline: none;
+            }
+            ul,li{
+                list-style: none;
+            }
+            .back{
+                padding: .25rem .15rem .24rem;
+            }
+            .content li{
+                overflow: hidden;
+                border-bottom: 1px solid #CCCCCC;
+                margin-bottom: .15rem;
+            }
+            .content .number{
+                padding: 0px 0.055rem;
+                float: left;
+                color: #fff;
+                background: red;
+                text-align: center;
+                font-size: .17rem;
+                margin-right: .14rem;
+            }
+            .content h3{
+                font-size: .17rem;
+                line-height: .2rem;
+                margin-bottom: .14rem;
+            }
+            .content .text{
+                font-size: .14rem;
+                line-height: .21rem;
+                margin-bottom: .12rem;
+                margin-left: .5rem;
+                color: #666666;
+            }
+            .content .add .text{
+                margin-left: .59rem;
+            }
+            .content li:last-of-type{
+                border: none;
+            }
+            .content .line{
+                width: 100%;
+                height: .15rem;
+                position: relative;
+            }
+            .content .line p:first-child{
+                width: 100%;
+                height: 1px;
+                background: #D2D4D7;
+                position: absolute;
+                left: 0;
+                top: 50%;
+            }
+            .content .line p:last-child{
+                width: .56rem;
+                height: .15rem;
+                line-height: .15rem;
+                color: #D2D4D7;
+                background: #fff;
+                text-align: center;
+                font-size: .15rem;
+                position: absolute;
+                left: 50%;
+                margin-left: -.28rem;
+                top: 0;
+            }
+            .back .weChat{
+                /*width: 100%;*/
+                height: 1.6rem;
+                background: url(../images/frame@2x.png) no-repeat left center;
+                background-size: 100% 1.6rem;
+                overflow: hidden;
+                margin-bottom: .4rem;
+            }
+            .back .weChat div{
+                width: .94rem;
+                height: .94rem;
+                margin: .1rem auto;
+            }
+            .back .weChat div img{
+                width: 100%;
+            }
+            .back .weChat p{
+                font-size: .13rem;
+                color: #666666;
+                line-height: .18rem;
+                padding: 0 .2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="back">
+            <div class="content">
+                <ul>
+                    <li>
+                        <p class="number">Q1</p><h3>什么是红包？</h3>
+                        <p class="text">红包是那啥APP发放给用户用于抵扣订单金额的电子优惠券。</p>
+                    </li>
+                    <li>
+                        <p class="number">Q2</p><h3>红包有使用期限吗？</h3>
+                        <p class="text">红包上会注明有效期，请在有效期内使用红包。</p>
+                    </li>
+                    <li>
+                        <p class="number">Q3</p><h3>红包有使用条件吗？</h3>
+                        <p class="text">红包上会注明使用条件，如"无使用条件"、"订单满1000可使用"等。</p>
+                    </li>
+                    <li>
+                        <p class="number">Q4</p><h3>红包是否可以找零或提现？</h3>
+                        <p class="text">红包支持找零和提现。若红包金额高于订单额的，差额部分不找零不兑换；订单金额高于红包金额的，差额部分由用户支付。</p>
+                    </li>
+                    <li>
+                        <p class="number">Q5</p><h3>一个订单可是否可以使用多个红包？</h3>
+                        <p class="text">一个订单最多只能使用一个红包。</p>
+                    </li>
+                    <li>
+                        <p class="number">Q6</p><h3>红包有使用次数上限吗？</h3>
+                        <p class="text">目前用户使用红包次数不设上限。</p>
+                    </li>
+                    <li>
+                        <p class="number">Q7</p><h3>红包抵扣的部分可以开发票吗？</h3>
+                        <p class="text">由于用户并未实际支付红包抵用部分的订单金额，因此不能获得这部分抵用金额的发票。</p>
+                    </li>
+                    <li>
+                        <p class="number">Q8</p><h3>使用N卡或S卡支付时，如何使用红包？</h3>
+                        <p class="text">用户可同时选择红包和N/S卡支付订单，系统会优先使用红包抵扣订单金额，然后使用N/S卡，若仍不够支付订单，差额部分可选择其他方式支付。</p>
+                    </li>
+                    <li>
+                        <p class="number">Q9</p><h3>怎样可以获得红包？</h3>
+                        <p class="text">注册和邀请好友均可以获得红包。如邀请好友，则只有当被邀请者在注册时填入您的邀请码并完成注册后，您方可获得红包奖励。</p>
+                    </li>
+                </ul>
+                <div class="weChat">
+                    <div>
+                        <img src="../images/weChat.jpg" alt="">
+                    </div>
+                    <p>
+                        关注“那啥陪同翻译”微信公众号，那啥官方会通过公众号发布关于如何获得红包的相关活动。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript">
+        var body = document.getElementsByTagName('body')[0];
+        var html = document.getElementsByTagName('html')[0];
+        var width =body.offsetWidth;
+        html.style.fontSize = width/3.75+'px';
+        console.log(html.style.fontSize);
+    </script>
+</html>

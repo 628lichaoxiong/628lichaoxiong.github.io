@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"  
+        xmlns:mvc="http://www.springframework.org/schema/mvc"  
+        xmlns:util="http://www.springframework.org/schema/util" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context  
+          http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+          http://www.springframework.org/schema/mvc      
+          http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd  
+          http://www.springframework.org/schema/util   
+          http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize">
+			<value>50000000</value>
+		</property>
+	</bean>
+
+    <!-- <bean id="basePropertyPlaceHolder"
+        class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer"
+        lazy-init="true">
+        <property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+        <property name="ignoreResourceNotFound" value="true" />
+        <property name="locations">
+            <list>
+                <value>classpath*:/*.properties</value>
+            </list>
+        </property>
+    </bean> -->
+    
+	<bean id="RedisUtils" class="com.transn.houtai.util.RedisUtils">
+      <property name="pool" ref="jedisPool"></property>
+     </bean>
+     <!-- redis的连接池pool，不是必选项：timeout/password  -->
+     <bean id = "jedisPool" class="redis.clients.jedis.JedisPool">
+      <constructor-arg index="0" ref="poolConfig"/>
+      <!-- 测试环境 -->
+      <constructor-arg index="1" value="${redis.host}"/> 
+      <constructor-arg index="2" value="${redis.port}"  type="int"/>
+    </bean> 
+    <bean id="poolConfig" class="redis.clients.jedis.JedisPoolConfig">
+        <property name="maxIdle" value="300" />
+        <property name="maxActive" value="600" />
+        <property name="maxWait" value="1000" />
+        <property name="testOnBorrow" value="true" />
+    </bean> 
+	
+	<!-- 要调用的工作类 -->
+     <!--    <bean id="quartzJob" class="com.yunxuetang.oss.monitorSystem"></bean>
+        
+        <bean id="quartzJob2" class="com.yunxuetang.oss.MahoutRunJob"></bean>
+        
+        定义调用对象和调用对象的方法
+        <bean id="jobtask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+            调用的类
+            <property name="targetObject">
+                <ref bean="quartzJob"/>
+            </property>
+            调用类中的方法
+            <property name="targetMethod">
+                <value>checkhoutai</value>
+            </property>
+        </bean>
+        
+         定义调用对象和调用对象的方法
+        <bean id="jobtask2" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+            调用的类
+            <property name="targetObject">
+                <ref bean="quartzJob2"/>
+            </property>
+            调用类中的方法
+            <property name="targetMethod">
+                <value>runjob</value>
+            </property>
+        </bean>
+        
+        定义触发时间
+        <bean id="doTime" class="org.springframework.scheduling.quartz.CronTriggerBean">
+            <property name="jobDetail">
+                <ref bean="jobtask"/>
+            </property>
+            cron表达式
+            <property name="cronExpression" value="1 * * * * ?" /> 
+            
+        </bean>
+        
+        
+        定义触发时间
+        <bean id="doTime2" class="org.springframework.scheduling.quartz.CronTriggerBean">
+            <property name="jobDetail">
+                <ref bean="jobtask2"/>
+            </property>
+            cron表达式
+            <property name="cronExpression" value="0 0 6 * * ?" /> 
+            
+        </bean>
+        
+        
+        总管理类 如果将lazy-init='false'那么容器启动就会执行调度程序 
+        <bean id="startQuertz" lazy-init="true"  class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+            <property name="triggers">
+                <list>
+                    <ref bean="doTime"/>
+                    <ref bean="doTime2"/>
+                </list>
+            </property>
+        </bean> -->
+	
+	 
+</beans>
